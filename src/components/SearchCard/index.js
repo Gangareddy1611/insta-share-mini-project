@@ -34,8 +34,8 @@ class SearchCard extends Component {
     }
     const response = await fetch(apiUrl, options)
     console.log(response)
+    const data = await response.json()
     if (response.ok) {
-      const data = await response.json()
       console.log(data)
     }
   }
